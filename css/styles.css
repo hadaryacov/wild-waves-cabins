@@ -1,0 +1,172 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-weight:200;
+}
+
+/*header*/
+header{
+	border-bottom:1px solid rgba(255,255,255,0.1);
+	position:fixed;
+	top:0;
+	width:100%;
+	z-index: 1;
+	color:white;
+	padding:0px 20px;
+	background-color:transparent;
+	transition:all 0.5s;
+}
+header h1{
+	font-family: 'Fredericka the Great', cursive;
+	float:left;
+}
+header.bold{
+	background-color:rgba(0,0,0,0.8);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22), 0 14px 56px rgba(0, 0, 0, 0.25);
+}
+/*nav*/
+header nav{
+	float:right;
+}
+header nav ul li{
+	float: left;
+	padding: 31px 10px;
+	font-weight: 200;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.wrapper{
+	width:100%;
+	max-width:1024px;
+	margin:0 auto;
+}
+.wrapper h2{
+	font-family: 'Fredericka the Great', cursive;
+	font-size:30px;
+	text-align:left;
+	margin:10px 0px 40px;
+}
+section .wrapper{
+	padding: 40px 20px 50px 20px;
+}
+
+/*section.hero*/
+section.hero{
+	background-image:url('../img/beach.jpg');
+	background-size:cover;
+	min-height:600px;
+	position:relative;
+}
+section.hero h1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%)translateY(-50%)rotate(-5deg);
+	font-family: 'Fredericka the Great', cursive;
+	text-align: center;
+	background-color: white;
+	padding: 20px;
+	max-width: 340px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22), 0 14px 56px rgba(0, 0, 0, 0.25);
+	transition:all 0.5;
+}
+section.hero .darken{
+	background-color:rgba(0,0,0,0.4);
+	position:absolute;
+	top:0;left:0;right:0;bottom:0;
+}
+/*section.book*/
+section.book{
+	background-color:white;
+	border-bottom:1px solid rgba(0,0,0,0.1);
+}
+section.book .wrapper button{
+	width: 100px;
+	height: 30px;
+	border: 1px solid rgba(0,0,0,0.1);
+	background-color: white;
+}
+section.book .wrapper input[type=text]{
+	border:none;
+	border-bottom:1px solid #999;
+	font-family: 'Open Sans', sans-serif;
+	margin-right:30px;
+}
+section.book .wrapper form{
+	margin-bottom:30px;
+}
+
+/*section.gallery*/
+section.gallery{
+	background-image:url('../img/1.jpg');
+	background-size:cover;
+}
+section.gallery .wrapper{
+	position:relative;
+	height: 100%;
+	text-align: center;
+}
+section.gallery .wrapper h2{
+	transform: rotate(-5deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22), 0 14px 56px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    padding: 20px;
+    width: auto;
+    margin-top: 100px;
+    float: none;
+    display: inline-block;
+    margin: 10px auto;
+}
+section.gallery .wrapper .arrow-left{
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%)rotate(5deg);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22), 0 14px 56px rgba(0, 0, 0, 0.25);
+	left:0;
+	background-color:white;
+}
+section.gallery .wrapper .arrow-right{
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%)rotate(-5deg);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22), 0 14px 56px rgba(0, 0, 0, 0.25);
+	right:0;
+	background-color:white;
+}
+section.gallery .wrapper .arrow-right img{
+	width:120px;
+}
+section.gallery .wrapper .arrow-left img{
+	width:120px;
+	-moz-transform: scaleX(-1);    /* Gecko */
+	-o-transform: scaleX(-1);      /* Opera */
+	-webkit-transform: scaleX(-1); /* Webkit */
+	transform: scaleX(-1);         /* Standard */
+	filter: FlipH;                 /* IE 6/7/8 */
+
+}
+
+/*section.about*/
+section.about{
+	background-color:#F8FAFF;
+	border-bottom:1px solid rgba(0,0,0,0.1);
+}
+section.about .columns{
+	display:flex;
+}
+section.about .columns .col{
+	flex:1;
+	padding-right:30px;
+	line-height:1.3em;
+}
+
+
+section.contact{
+	background-color:white;
+	min-height:400px;
+	border-bottom:1px solid rgba(0,0,0,0.1);
+}
+footer{
+	background-color:rgba(0,0,0,0.9);
+	min-height:200px;
+}
